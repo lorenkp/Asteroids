@@ -12,6 +12,18 @@
   <script type="application/javascript" src="lib/bullet.js"></script>
   <script type="application/javascript" src="lib/asteroid.js"></script>
   <script type="application/javascript" src="lib/ship.js"></script>
+  <script type="application/javascript" src="lib/collision.js"></script>
+  <script type="application/javascript">
+  window.addEventListener('keydown', preventDefault, false);
+
+  function preventDefault(e) {
+    var codes = [38, 37, 39, 40, 32]
+    if (codes.indexOf(e.keyCode) !== -1) {
+      e.preventDefault();
+    }
+  }
+
+  </script>
 
   <script type="application/javascript">
     canvasEl = document.getElementsByTagName("canvas")[0];
