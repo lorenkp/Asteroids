@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'vector_battleregular';
+    src: url('vectorb-webfont.eot');
+    src: url('vectorb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('vectorb-webfont.woff2') format('woff2'),
+         url('vectorb-webfont.woff') format('woff'),
+         url('vectorb-webfont.ttf') format('truetype'),
+         url('vectorb-webfont.svg#vector_battleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

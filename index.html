@@ -7,8 +7,10 @@
 
 <body>
   <canvas></canvas>
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
   <script type="application/javascript" src="vendor/keydrown.min.js"></script>
   <script type="application/javascript" src="lib/game.js"></script>
+  <script type="application/javascript" src="lib/gameStart.js"></script>
   <script type="application/javascript" src="lib/bullet.js"></script>
   <script type="application/javascript" src="lib/asteroid.js"></script>
   <script type="application/javascript" src="lib/ship.js"></script>
@@ -28,7 +30,7 @@
   <script type="application/javascript">
     canvasEl = document.getElementsByTagName("canvas")[0];
     
-    theGame = new Asteroids.Game(canvasEl);
+    theGame = new Asteroids.GameStart(canvasEl);
     
   </script>
 </body>
