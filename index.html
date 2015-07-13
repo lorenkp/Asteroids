@@ -2,37 +2,35 @@
 <html>
 
 <head>
-  <title>Asteroids</title>
+    <title>Asteroids</title>
 </head>
 
 <body>
-  <canvas></canvas>
-  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
-  <script type="application/javascript" src="vendor/keydrown.min.js"></script>
-  <script type="application/javascript" src="lib/game.js"></script>
-  <script type="application/javascript" src="lib/gameStart.js"></script>
-  <script type="application/javascript" src="lib/bullet.js"></script>
-  <script type="application/javascript" src="lib/asteroid.js"></script>
-  <script type="application/javascript" src="lib/ship.js"></script>
-  <script type="application/javascript" src="lib/collision.js"></script>
-  <script type="application/javascript">
-  window.addEventListener('keydown', preventDefault, false);
+    <canvas></canvas>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+    <script type="application/javascript" src="vendor/keydrown.min.js"></script>
+    <script type="application/javascript" src="vendor/howler.min.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameStart.js"></script>
+    <script type="application/javascript" src="lib/bullet.js"></script>
+    <script type="application/javascript" src="lib/asteroid.js"></script>
+    <script type="application/javascript" src="lib/ship.js"></script>
+    <script type="application/javascript" src="lib/collision.js"></script>
+    <script type="application/javascript">
+    window.addEventListener('keydown', preventDefault, false);
 
-  function preventDefault(e) {
-    var codes = [38, 37, 39, 40, 32]
-    if (codes.indexOf(e.keyCode) !== -1) {
-      e.preventDefault();
+    function preventDefault(e) {
+        var codes = [38, 37, 39, 40, 32];
+        if (codes.indexOf(e.keyCode) !== -1) {
+            e.preventDefault();
+        }
     }
-  }
-
-  </script>
-
-  <script type="application/javascript">
+    </script>
+    <script type="application/javascript">
     canvasEl = document.getElementsByTagName("canvas")[0];
-    
+
     theGame = new Asteroids.GameStart(canvasEl);
-    
-  </script>
+    </script>
 </body>
 
 </html>
