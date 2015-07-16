@@ -14,7 +14,12 @@ body {
 
 canvas {
     display: block;
-    margin: 0 auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 #title {
@@ -22,27 +27,38 @@ canvas {
     text-align: center;
     letter-spacing: 25px;
     position: relative;
-    top: 150px;
+    top: 250px;
+    z-index: 1;
+}
+
+#game-over {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 25px;
+    position: relative;
+    top: 250px;
+    z-index: 1;
 }
 
 #start {
     text-align: center;
     position: relative;
-    top: 223px;
+    top: 325px;
     font-size: 21px;
     letter-spacing: 5px;
+    z-index: 1;
 }
 
 #start {
-    -moz-animation-duration: 1000ms;
+    -moz-animation-duration: 800ms;
     -moz-animation-name: blink;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: alternate;
-    -webkit-animation-duration: 1000ms;
+    -webkit-animation-duration: 800ms;
     -webkit-animation-name: blink;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    animation-duration: 1000ms;
+    animation-duration: 800ms;
     animation-name: blink;
     animation-iteration-count: infinite;
     animation-direction: alternate;
