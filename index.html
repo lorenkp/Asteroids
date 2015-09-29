@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Asteroids</title>
+    <style type="text/css">.hidden {display:none;}</style>
+    <script type="text/javascript">
+    $('html').addClass('hidden');
+    $(document).ready(function() {
+      $('html').show();
+     });
+   </script>
+</head>
+
+<body>
+    <div id="title">ASTEROIDS</div>
+    <div id="game-over">GAME OVER</div>
+    <div id="start">PRESS ENTER TO PLAY</div>
+    <canvas></canvas>
+    <script type="application/javascript" src="vendor/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+    <script type="application/javascript" src="vendor/keypress.js"></script>
+    <script type="application/javascript" src="vendor/keydrown.min.js"></script>
+    <script type="application/javascript" src="vendor/mousetrap.min.js"></script>
+    <script type="application/javascript" src="vendor/howler.min.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameStart.js"></script>
+    <script type="application/javascript" src="lib/bullet.js"></script>
+    <script type="application/javascript" src="lib/asteroid.js"></script>
+    <script type="application/javascript" src="lib/ship.js"></script>
+    <script type="application/javascript" src="lib/collision.js"></script>
+    <script type="application/javascript">
+    window.addEventListener('keydown', preventDefault, false);
+
+    function preventDefault(e) {
+        var codes = [38, 37, 39, 40, 32];
+        if (codes.indexOf(e.keyCode) !== -1) {
+            e.preventDefault();
+        }
+    }
+    </script>
+    <script type="application/javascript">
+    canvasEl = document.getElementsByTagName("canvas")[0];
+
+    theGame = new Asteroids.GameStart(canvasEl);
+    </script>
+</body>
+
+</html>
