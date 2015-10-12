@@ -11,7 +11,7 @@ Thar be sounds--turn up (or down) as you see fit
 The trusty Asteroids game created with JavaScript and HTML5 Canvas. Uses `requestAnimationFrame()`
 to render smooth 60FPS, which is more efficient than `setTimeOut()`/`setInterval()`.
 
-*That's a GIF ... I promise the actual FPS is higher than 8 FPS*
+*That's a GIF ... I promise the actual FPS is higher than 8*
 
 ## Controls
 
